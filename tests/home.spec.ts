@@ -19,7 +19,8 @@ test('add item to cart', async ({ page }) => {
 
   await page.goto('http://localhost:5173');
   await page.getByTestId('view-product-btn').first().click();
-  await page.getByRole('button', { name: /add to cart/i }).click();
+  await expect(page).toHaveURL(/product/); 
+  await page.getByRole('button', { name: /add to cart/i }).first().click();
   await expect(page.getByTestId('cart-count')).toHaveText('1');
 
 });
