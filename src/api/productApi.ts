@@ -12,7 +12,7 @@ export const getProducts = async () => {
 
 };
 
-export const getProductById = async (id: string) => {
+export const getProductById = async (id: number) => {
     try {
         const response = await axios.get(`${BASE_URL}/products/${id}`);
         return response.data;

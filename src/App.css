@@ -7,7 +7,7 @@
   min-width: 320px;
   width: 25%;
   max-width: 360px;
-  height: 380px;
+  /* height: 380px; */
   background: var(--card-bg);
   border-radius: 20px;
   position: relative;
@@ -140,6 +140,21 @@
   align-items: center;
   justify-content: center;
   color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.9);
+}
+
+.card__button2 {
+  width: 138px;
+  height: 38px;
+  background: white;
+  border: 1px solid var(--card-accent);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-accent);
   cursor: pointer;
   transition: all 0.3s ease;
   transform: scale(0.9);
